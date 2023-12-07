@@ -12,7 +12,7 @@ import wrappers.Chassis;
 import wrappers.Game;
 
 public class RobotSim {
-    public static final double SLOW_DT = 0.000004;
+    public static final double SLOW_DT = 0.000002;
     public static final double FAST_DT = 0.00025;
 
     public Chassis chassis;
