@@ -37,16 +37,16 @@ public class RobotVisualization extends JPanel {
     
         // Draw vertical grid lines
         for (int i = 0; i <= Game.FIELD_WIDTH; i++) {
-            int x = (int) (centerX + (i - Game.FIELD_WIDTH / 2) * Game.TILE_SIZE * scaleFactor);
-            g2d.drawLine(x, (int) (centerY - Game.FIELD_HEIGHT / 2 * Game.TILE_SIZE * scaleFactor),
-                         x, (int) (centerY + Game.FIELD_HEIGHT / 2 * Game.TILE_SIZE * scaleFactor));
+            int x = (int) (centerX + (i - Game.FIELD_WIDTH / 2) * Game.TS * scaleFactor);
+            g2d.drawLine(x, (int) (centerY - Game.FIELD_HEIGHT / 2 * Game.TS * scaleFactor),
+                         x, (int) (centerY + Game.FIELD_HEIGHT / 2 * Game.TS * scaleFactor));
         }
     
         // Draw horizontal grid lines
         for (int i = 0; i <= Game.FIELD_HEIGHT; i++) {
-            int y = (int) (centerY + (i - Game.FIELD_HEIGHT / 2) * Game.TILE_SIZE * scaleFactor);
-            g2d.drawLine((int)(centerX - Game.FIELD_WIDTH / 2 * Game.TILE_SIZE * scaleFactor), y,
-                         (int)(centerX + Game.FIELD_WIDTH / 2 * Game.TILE_SIZE * scaleFactor), y);
+            int y = (int) (centerY + (i - Game.FIELD_HEIGHT / 2) * Game.TS * scaleFactor);
+            g2d.drawLine((int)(centerX - Game.FIELD_WIDTH / 2 * Game.TS * scaleFactor), y,
+                         (int)(centerX + Game.FIELD_WIDTH / 2 * Game.TS * scaleFactor), y);
         }
     
         // Draw robot components at its actual position

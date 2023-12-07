@@ -1,7 +1,7 @@
 package wrappers;
 
 public class Game {
-    public static final int TILE_SIZE = 24;
+    public static final int TS = 24;
     public static final int FIELD_WIDTH = 6;
     public static final int FIELD_HEIGHT = 6;
 

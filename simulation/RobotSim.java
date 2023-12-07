@@ -30,7 +30,7 @@ public class RobotSim {
         this.visualization = new RobotVisualization();
 
         frame.add(visualization);
-        frame.setSize((int)(Game.TILE_SIZE * Game.FIELD_WIDTH * this.visualization.scaleFactor), (int)(Game.TILE_SIZE * Game.FIELD_HEIGHT * this.visualization.scaleFactor));
+        frame.setSize((int)(Game.TS * Game.FIELD_WIDTH * this.visualization.scaleFactor), (int)(Game.TS * Game.FIELD_HEIGHT * this.visualization.scaleFactor));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
